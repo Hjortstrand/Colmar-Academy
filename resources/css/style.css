@@ -27,6 +27,7 @@ header {
 	width: 100%;
 	position: fixed;
 	z-index: 1;
+	background-color: rgb(255, 255, 255);
 }
 
 header .content {
@@ -70,6 +71,8 @@ header .content nav {
 	width: 1rem;
 	background-color: rgb(146, 224, 224);
 }
+
+
 
 .banner {
 	background-color: rgb(216, 216, 216);
