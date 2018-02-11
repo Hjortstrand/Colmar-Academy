@@ -12,12 +12,21 @@ h3,
 h5 {
 	font-family: 'Libre Franklin', sans-serif;
 	font-weight: 700;
+	line-height: 1.2;
 	color: rgb(74, 74, 74);
+}
+
+p {
+	line-height: 1.2;
 }
 
 a {
   text-decoration: none;
-  color: rgb(74, 74, 74);
+}
+
+.v-center {
+	display: flex;
+	align-items: center;
 }
 
 /* header styles */
@@ -33,11 +42,6 @@ header {
 header .content {
 	display: flex;
 	justify-content: space-between;
-}
-
-header .content .logo {
-	display: flex;
-	align-items: center;
 }
 
 header .content img {
@@ -62,8 +66,6 @@ header .content nav {
 
 .navlink {
 	height: 4rem;
-	display: flex;
-	align-items: center;
 }
 
 .navlink .space {
@@ -72,12 +74,12 @@ header .content nav {
 	background-color: rgb(146, 224, 224);
 }
 
-
+.navlink div a {
+	color: rgb(74, 74, 74);
+}
 
 .banner {
 	background-color: rgb(216, 216, 216);
-	display: flex;
-	align-items: center;
 }
 
 
@@ -108,6 +110,78 @@ header .content nav {
 	padding: 0.5rem 0;
 }
 
-.info img {
-	padding: 2rem 1.5rem;
+/* ínformation styles */
+
+.info {
+	display: inline-flex;
+}
+
+.main-info {
+	width: 60%;
+	padding-right: 1.5rem;
+}
+
+.main-info img {
+	width: 100%;
+}
+
+.main-info h3 {
+	font-size: 3rem;
+	margin: 2rem 0 1.5rem 0;
+}
+
+.main-info .author {
+	font-weight: 700;
+	margin-top: 1.5rem;
+}
+
+.guest {
+	background-color: rgb(216, 216, 216);
+}
+
+.add-info {
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.add-info .container img {
+	width: 35%;
+	height: auto;
+	margin: 1rem;
+}
+
+#no-top {
+	margin-top: 0;
+}
+
+.text-block {
+	line-height: 1.5rem;
+	width: 65%;
+}
+
+.text-block p {
+	padding: .5rem 0;
+}
+
+.add-info .container h5 {
+	font-size: 2rem;
+}
+
+.clear {
+	width: 100%;
+	height: 2rem;
+}
+
+/* course styles */
+
+.course {
+	background-color: rgb(234, 235, 236);
+}
+
+.course h1 {
+	text-align: center;
+	font-size: 4rem;
+	padding: 2rem 0;
 }
