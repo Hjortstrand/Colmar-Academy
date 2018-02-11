@@ -1,6 +1,8 @@
 html {
   font-family: 'Libre Baskerville', serif;
   font-size: 16px;
+  color: rgb(74, 74, 74);
+  background-color: rgb(216, 216, 216);
 }
 
 h1,
@@ -8,8 +10,64 @@ h3,
 h5 {
 	font-family: 'Libre Franklin', sans-serif;
 	font-weight: 700;
+	color: rgb(74, 74, 74);
 }
 
 a {
   text-decoration: none;
+  color: rgb(74, 74, 74);
+}
+
+header {
+	height: 4rem;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+	background-color: #fff;
+}
+
+header .content {
+	display: flex;
+	justify-content: space-between;
+}
+
+header .content .logo {
+	display: flex;
+	align-items: center;
+}
+
+header .content img {
+	padding-left: 1.5rem;
+	height: 2rem;
+	width: auto;
+}
+
+header .content h3 {
+	font-size: 1.5rem;
+	padding: 1rem 0;
+}
+
+.regular {
+	font-weight: 300;
+	color: rgb(155, 155, 155);
+}
+
+header .content nav {
+	padding-right: 1.5rem;
+}
+
+.navlink {
+	height: 4rem;
+	display: flex;
+	align-items: center;
+}
+
+.navlink .space {
+	height: 4rem;
+	width: 1rem;
+	background-color: rgb(146, 224, 224);
+}
+
+.main-container {
+
 }
