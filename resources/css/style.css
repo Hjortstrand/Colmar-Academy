@@ -146,7 +146,7 @@ header .content nav {
 	margin-top: 1.5rem;
 }
 
-.guest {
+.special-bg {
 	background-color: rgb(216, 216, 216);
 }
 
@@ -225,9 +225,27 @@ header .content nav {
 
 .thesis-container {
 	padding-top: 2rem;
+	display: inline-flex;
+}
+
+.video-container {
+	width: 60%;
+	padding: 0 1.5rem 1.5rem 1.5rem;
 }
 
 .video-container video {
-	width: 60%;
-	padding: 0 1.5rem 1.5rem 1.5rem;
+	width: 100%;
+}
+
+.showcase-container {
+	min-width: 40%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.showcase img {
+	height: auto;
+	width: 35%;
+	padding: 1rem;
 }
