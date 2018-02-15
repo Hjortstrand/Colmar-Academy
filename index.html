@@ -5,6 +5,7 @@
     <style>
       @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Libre+Franklin:300,400,700');
     </style>
+    <link rel="icon" type="image/png" sizes="16x16" href="./resources/images/favicon-16x16.png">
     <link rel="stylesheet" type="text/css" href="./resources/css/reset.css">
     <link rel="stylesheet" type="text/css" href="./resources/css/style.css">
   </head>
@@ -14,12 +15,12 @@
 <!-- Header section -->
 
     <header>
-      <div class="content">
+      <div class="desktop-head">
         <div class="logo v-center">
           <img src="./resources/images/ic-logo.svg" alt="Colmar Academy logo">
           <h5>COLMAR</h5><h5 class="regular">ACADEMY</h5>
         </div>
-        <nav class="desktop">
+        <nav>
           <div class="navlink v-center">
             <div><a href="#">On campus</a></div>
             <div class="space"></div>
@@ -31,11 +32,18 @@
           </div>
         </nav>
       </div>
+      <div class="mobile-head">
+        <a href="#"><img src="./resources/images/ic-logo.svg" alt="Colmar Academy logo"></a>
+        <a href="#"><img src="./resources/images/ic-on-campus.svg" alt="Colmar Academy campus"></a>
+        <a href="#"><img src="./resources/images/ic-online.svg" alt="Colmar Academy Online"></a>
+        <a href="#"><img src="./resources/images/ic-login.svg" alt="Colmar Academy login"></a>
+      </div>
     </header>
 
 <!-- banner section -->
 
     <div class="main-container">
+      
       <div class="banner v-center">
         <img src="./resources/images/banner.jpg" alt="three people studing outside on some benches">
         <div class="banner-text">
@@ -46,6 +54,7 @@
       </div>
 
 <!-- information section -->
+
       <div class="clear"></div>
 
       <div class="info">
@@ -73,9 +82,9 @@
               <a href="#">Read more</a>
             </div>
           </div>
-          <div class="container special-bg v-center">
+          <div class="container v-center special-bg">
             <img src="./resources/images/information-guest-lecture.jpg" alt="headshot of elder bearded man glasses and a french beret named Oliver Sack">
-            <div class="info-text">
+            <div class="info-text" id="special-pad">
               <h5> Our guest lecture</h5>
               <p>Join a keynote with Oliver Sack about music in medical treatment</p>
               <a href="#">Read more</a>
@@ -91,49 +100,49 @@
       <div class="courses">
         <h1>Start Learning</h1>
         <div class="course-container">
-          <div class="cource">
+          <div class="course">
             <img src="./resources/images/course-software.jpg" alt="Dim lit desk with multiple screens keyboard and mouse">
-            <div class="cource-text">
+            <div class="course-text">
               <h4>Software engineering</h4>
               <p>COURSES</p>
               <p>Web Development, Mobile Development, iOT, APIs</p>
             </div>
           </div>
-          <div class="cource">
+          <div class="course">
             <img src="./resources/images/course-computer-art.jpg" alt="Hand holding a smartphone, beneath is a wodden table and a tea or coffee cup">
-            <div class="cource-text">
+            <div class="course-text">
               <h4>Computer art</h4>
               <p>COURSES</p>
               <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
             </div>
           </div>
-          <div class="cource">
+          <div class="course">
             <img src="./resources/images/course-design.jpg" alt="person in flanel shirt, taking a picture og recording a video on a camera">
-            <div class="cource-text">
+            <div class="course-text">
               <h4>Design</h4>
               <p>COURSES</p>
               <p>User Experience Design, User Research, Visual Design</p>
             </div>  
           </div>
-          <div class="cource">
+          <div class="course">
             <img src="./resources/images/course-data.jpg" alt="laptop on glass table, displaying graphs and stats">
-            <div class="cource-text">
+            <div class="course-text">
               <h4>Data</h4>
               <p>COURSES</p>
               <p>Data Science, Big Data, SQL, Data Visualization</p>
             </div>
           </div>
-          <div class="cource">
+          <div class="course">
             <img src="./resources/images/course-business.jpg" alt="Carved wooden chess game, chesterfield sofa in the background">
-            <div class="cource-text">
+            <div class="course-text">
               <h4>Business</h4>
               <p>COURSES</p>
               <p>Product Development, Business Development, Startup</p>
             </div>
           </div>
-          <div class="cource">
+          <div class="course">
             <img src="./resources/images/course-marketing.jpg" alt="persons arm wearing a smartwatch, other hand interacting with watch">
-            <div class="cource-text">
+            <div class="course-text">
               <h4>Marketing</h4>
               <p>COURSES</p>
               <p>Analytics, Content Marketing, Mobile Marketing</p>
