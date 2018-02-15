@@ -64,7 +64,7 @@ header .desktop-head {
 header .desktop-head img {
 	padding-left: 1.5rem;
 	height: 2rem;
-	width: auto;
+	width: 60%;
 }
 
 header .desktop-head h5 {
@@ -122,14 +122,15 @@ header .mobile-head {
 }
 
 
-.desktop-banner img {
+.banner img {
 	margin-top: 4rem;
-	padding: 2rem 1.5rem;
 	width: 60%;
+	padding: 2rem 1.5rem;
 }
 
 .banner-text {
 	width: 30%;
+
 }
 
 .banner-text h4 {
