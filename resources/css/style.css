@@ -1,10 +1,10 @@
 /* general styles */
 
-html {
+body {
   font-family: 'Libre Baskerville', serif;
-  font-size: 16px;
   color: rgb(74, 74, 74);
   background-color: rgb(255, 255, 255);
+  box-sizing: border-box;
 }
 
 h1,
@@ -13,28 +13,27 @@ h4,
 h5 {
 	font-family: 'Libre Franklin', sans-serif;
 	font-weight: 700;
-	line-height: 1.2;
 	color: rgb(74, 74, 74);
 }
 
-h1 {
-	font-size: 4rem;
+p {
+	line-height: 1.5;
 }
 
-h3 {
+h1 {
 	font-size: 3rem;
 }
 
-h4 {
+h3 {
 	font-size: 2rem;
 }
 
-h5 {
+h4 {
 	font-size: 1.5rem;
 }
 
-p {
-	line-height: 1.2;
+h5 {
+	font-size: 1.25rem;
 }
 
 a {
@@ -129,6 +128,8 @@ header .mobile-head {
 }
 
 .banner-text {
+	margin-top: 4rem;
+	padding-top: 2rem;
 	width: 30%;
 
 }
@@ -143,6 +144,10 @@ header .mobile-head {
 	text-align: center;
 	width: 100%;
 	padding: 0.5rem 0;
+}
+
+.btn a {
+	color: rgb(255, 255, 255);
 }
 
 @media only screen and (max-width: 480px) {
@@ -286,29 +291,40 @@ header .mobile-head {
 }
 
 .course-container {
-	display: flex;
-	justify-content: center;
-	align-items: stretch;
-	flex-wrap: wrap;
 	padding: 2rem 3.5rem;
 }
 
+.course-list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
 .course {
+	display: flex;
+	width: 28%;
+	flex-grow: 1;
+	padding: 0 1rem 2rem 1rem;
+}
+
+.course-content {
 	background-color: rgb(255, 255, 255);
-	max-width: 33.25rem;
-	margin: 0 1rem 2rem 1rem;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding-bottom: 1.5rem;
 }
 
-.course img {
+.course-content img {
 	height: auto;
+	width: 100%;
 }
 
-.course-text {
-	padding: 1rem 1rem 1.5rem 1rem;
+.course-content h4 {
+	margin: 1rem 1rem 0 1rem;
 }
 
-.course-text p {
-	margin-top: .5rem;
+.course-content p {
+	margin: 0.5rem 1rem 0 1rem;
 }
 
 @media only screen and (max-width: 480px) {
@@ -318,27 +334,33 @@ header .mobile-head {
 	}
 
 	.courses h1 {
-		font-size: 3rem;
+		font-size: 2rem;
 	}
 
-	.course-container {
+	.course-list {
 		display: block;
-		padding: 0.5rem 1rem 1.5rem 1rem;
 	}
 
 	.course {
+		padding: 0;
 		margin: 0.5rem 0;
+		width: 100%;
 	}
 
 	.course img {
 		display: none;
 	}
 
-	.course-text {
+	.course-content {
 		background-color: rgb(234, 235, 236);
 	}
 
-	.course-text p {
+	.course-content h4{
+		margin: 0;
+		padding: 1rem 1rem 0 1rem;
+	}
+
+	.course-content p {
 		display: none;
 	}
 }
