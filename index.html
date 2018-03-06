@@ -22,170 +22,182 @@
         </div>
         <nav>
           <div class="navlink v-center">
-            <div><a href="#">On campus</a></div>
+            <div role="menuitem"><a href="#">On campus</a></div>
             <div class="space"></div>
-            <div><a href="#">Online</a></div>
+            <div role="menuitem"><a href="#">Online</a></div>
             <div class="space"></div>
-            <div><a href="#">For companies</a></div>
+            <div role="menuitem"><a href="#">For companies</a></div>
             <div class="space"></div>
-            <div><a href="#">Sign in</a></div>
+            <div role="menuitem"><a href="#">Sign in</a></div>
           </div>
         </nav>
       </div>
       <div class="mobile-head">
-        <a href="#"><img src="./resources/images/ic-logo.svg" alt="Colmar Academy logo"></a>
-        <a href="#"><img src="./resources/images/ic-on-campus.svg" alt="Colmar Academy campus"></a>
-        <a href="#"><img src="./resources/images/ic-online.svg" alt="Colmar Academy Online"></a>
-        <a href="#"><img src="./resources/images/ic-login.svg" alt="Colmar Academy login"></a>
+        <a href="#" role="menuitem"><img src="./resources/images/ic-logo.svg" alt="Colmar Academy"></a>
+        <a href="#" role="menuitem"><img src="./resources/images/ic-on-campus.svg" alt="Colmar Academy campus"></a>
+        <a href="#" role="menuitem"><img src="./resources/images/ic-online.svg" alt="Colmar Academy Online"></a>
+        <a href="#" role="menuitem"><img src="./resources/images/ic-login.svg" alt="Colmar Academy login"></a>
       </div>
     </header>
 
-<!-- banner section -->
+    <main>
 
-    <div class="main-container">
+<!-- banner section -->
       
-      <div class="banner v-center">
+      <section class="banner v-center">
         <img src="./resources/images/banner.jpg" alt="three people studing outside on some benches">
         <div class="banner-text">
           <h1>Learn something new everyday</h1>
           <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
-          <div class="btn"><a href="#">Start here</a></div>
+          <button><a href="#">Start here</a></button>
         </div>
-      </div>
+      </section>
 
 <!-- information section -->
 
       <div class="clear"></div>
 
-      <div class="info">
-        <div class="main-info">
+      <section class="info">
+        <article class="main-info">
           <img src="./resources/images/information-main.jpg" alt="Smiling student sitting outside, reading a book">
           <h3>It doesn't hurt to keep practicing</h3>
           <p>"Curabitur vitae libero inipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
           <br>
-          <p class="author">Emanuel, Sr Strategist at Hiring.com</p>
-        </div>
-        <div class="add-info">
+          <p class="author" aria-label="author">Emanuel, Sr Strategist at Hiring.com</p>
+        </article>
+        <section class="add-info">
           <div class="container v-center">
             <img src="./resources/images/information-orientation.jpg" alt="above look og people walking down a cobbled path" id="no-top">
-            <div class="info-text">
+            <article class="info-text">
               <h5>Orientation date</h5>
               <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
               <a href="#">Read more</a>
-            </div>
+            </article>
           </div>
           <div class="container v-center">
             <img src="./resources/images/information-campus.jpg" alt="Inside, students sitting at a table studying">
-            <div class="info-text">
+            <article class="info-text">
               <h5>Our Campus</h5>
               <p>Find which campus is close to you</p>
               <a href="#">Read more</a>
-            </div>
+            </article >
           </div>
           <div class="container v-center special-bg">
             <img src="./resources/images/information-guest-lecture.jpg" alt="headshot of elder bearded man glasses and a french beret named Oliver Sack">
-            <div class="info-text" id="special-pad">
+            <article  class="info-text" id="special-pad">
               <h5> Our guest lecture</h5>
               <p>Join a keynote with Oliver Sack about music in medical treatment</p>
               <a href="#">Read more</a>
-            </div>
+            </article >
           </div>
-        </div>
-      </div>
+        </section>
+      </section>
 
       <div class="clear"></div>
 
 <!-- course section -->
 
-      <div class="courses">
+      <section class="courses">
         <h1>Start Learning</h1>
         <div class="course-container">
-          <ul class="course-list">
-            <li class="course">
-              <div class="course-content">
-                <img src="./resources/images/course-software.jpg" alt="Dim lit  desk with multiple screens keyboard and mouse">
+          <ul class="course-list" role="presentation">
+            <li class="course shrink">
+              <article class="course-content">
+                <a href="#">
+                  <img src="./resources/images/course-software.jpg" alt="Dim lit desk, with multiple screens keyboard and mouse">
+                </a>
                 <h4>Software engineering</h4>
                 <p>COURSES</p>
                 <p>Web Development, Mobile Development, iOT, APIs</p>
-              </div>
+              </article>
             </li>
-            <li class="course">
-              <div class="course-content">
-                <img src="./resources/images/course-computer-art.jpg" alt="Hand holding a smartphone, beneath is a wodden table and a tea or  coffee cup">
+            <li class="course shrink">
+              <article class="course-content">
+                <a href="#">
+                  <img src="./resources/images/course-computer-art.jpg" alt="Hand holding a smartphone, beneath is a wodden table and a tea or coffee cup">
+                </a>
                 <h4>Computer art</h4>
                 <p>COURSES</p>
                 <p>Imaging & Design, Web Design, Motion Graphics & Visual  Effects, Computer Animation</p>
-              </div>
+              </article>
             </li>
-            <li class="course">
-              <div class="course-content">
-                <img src="./resources/images/course-design.jpg" alt="person in flanel shirt, taking a picture og recording a video on a camera"  >
+            <li class="course shrink">
+              <article class="course-content">
+                <a href="#">
+                  <img src="./resources/images/course-design.jpg" alt="person in flanel shirt, taking a picture or recording a video on a camera">
+                </a>
                 <h4>Design</h4>
                 <p>COURSES</p>
                 <p>User Experience Design, User Research, Visual Design</p>
-              </div>
+              </article>
             </li>
-            <li class="course">
-              <div class="course-content">
-                <img src="./resources/images/course-data.jpg" alt="laptop on  glass table, displaying graphs and stats">
+            <li class="course shrink">
+              <article class="course-content">
+                <a href="#">
+                  <img src="./resources/images/course-data.jpg" alt="laptop on glass table, displaying graphs and stats">
+                </a>
                 <h4>Data</h4>
                 <p>COURSES</p>
                 <p>Data Science, Big Data, SQL, Data Visualization</p>
-              </div>
+              </article>
             </li>
-            <li class="course">
-              <div class="course-content">
-                <img src="./resources/images/course-business.jpg" alt="Carved  wooden chess game, chesterfield sofa in the background">
+            <li class="course shrink">
+              <article class="course-content">
+                <a href="#">
+                  <img src="./resources/images/course-business.jpg" alt="Carved wooden chess game, chesterfield sofa in the background">
+                </a>
                 <h4>Business</h4>
                 <p>COURSES</p>
                 <p>Product Development, Business Development, Startup</p>
-            </div>
+              </article>
             </li>
-            <li class="course">
-              <div class="course-content">
-                <img src="./resources/images/course-marketing.jpg" alt="persons  arm wearing a smartwatch, other hand interacting with watch">
+            <li class="course shrink">
+              <article class="course-content">
+                <a href="#">
+                  <img src="./resources/images/course-marketing.jpg" alt="persons arm wearing a smartwatch, other hand interacting with watch">
+                </a>
                 <h4>Marketing</h4>
                 <p>COURSES</p>
                 <p>Analytics, Content Marketing, Mobile Marketing</p>
-              </div>
+              </article>
             </li>
           </ul>
         </div>
-      </div>
+      </section>
 
 <!-- thesis section -->
 
-      <div class="thesis">
+      <section class="thesis">
         <h1>Thesis exhibit</h1>  
-      </div>
-      <div class="thesis-container">
-        <div class="video-container">
-          <video controls>
-            <source src="./resources/videos/thesis.mp4" type="video/mp4">
-          </video>
-          <div class="video-text">
-            <h4>Reimagine urban</h4>
-            <p>"Curabitur vitae libero inipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
+        <div class="thesis-container">
+          <div class="video-container">
+            <video controls>
+              <source src="./resources/videos/thesis.mp4" type="video/mp4">
+            </video>
+            <div class="video-text">
+              <h4>Reimagine urban</h4>
+              <p>"Curabitur vitae libero inipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
+            </div>
           </div>
-        </div>
-        <div class="showcase-container">
-          <div class="showcase v-center special-bg">
-            <img src="./resources/images/thesis-fisma.jpg" alt="ariel shot of desk, with Apple monitor, iphone, papernotes somebody using highlighting marker on the papernotes">
-            <div class="showcase text">
-              <h4>Fisma: Design and prototype product</h4>
-              <p>Designer showcase af new prototype product</p>
-            </div>            
-          </div>
-          <div class="showcase v-center">
-            <img src="./resources/images/thesis-now-and-then.jpg" alt="ariel shot of the Empire State Building and New York skyline">
-            <div class="showcase text">
-              <h4>Now and then</h4>
-              <p>Research study ab out New York</p>
+          <div class="showcase-container">
+            <div class="showcase v-center special-bg">
+              <img src="./resources/images/thesis-fisma.jpg" alt="ariel shot of desk, with Apple monitor, iphone, papernotes somebody using highlighting marker on the papernotes">
+              <article class="showcase text">
+                <h4>Fisma: Design and prototype product</h4>
+                <p>Designer showcase af new prototype product</p>
+              </article>            
+            </div>
+            <div class="showcase v-center">
+              <img src="./resources/images/thesis-now-and-then.jpg" alt="Ariel shot of the Empire State Building in the center and New York urban sprawl">
+              <article class="showcase text">
+                <h4>Now and then</h4>
+                <p>Research study ab out New York</p>
+              </article>
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
 
 <!-- footer section -->
 

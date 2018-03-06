@@ -81,6 +81,7 @@ header .dekstop-head nav {
 
 .navlink {
 	height: 4rem;
+	padding-right: 1.5rem;
 }
 
 .navlink .space {
@@ -91,6 +92,15 @@ header .dekstop-head nav {
 
 .navlink div a {
 	color: rgb(74, 74, 74);
+	-o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+	transition: .5s;
+}
+
+.navlink div a:hover {
+	color: rgb(146, 224, 224);
 }
 
 header .mobile-head {
@@ -112,6 +122,8 @@ header .mobile-head {
 		height: 2rem;
 		width: auto;
 	}
+
+
 }
 
 /* banner styles */
@@ -138,7 +150,7 @@ header .mobile-head {
 	margin: 2rem 0;
 }
 
-.banner-text .btn {
+.banner-text button {
 	background-color: rgb(74, 74, 74);
 	color: rgb(255, 255, 255);
 	text-align: center;
@@ -146,8 +158,17 @@ header .mobile-head {
 	padding: 0.5rem 0;
 }
 
-.btn a {
+button a {
 	color: rgb(255, 255, 255);
+	-o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+	transition: .5s;
+}
+
+.banner-text button a:hover {
+	color: rgb(146, 224, 224);
 }
 
 @media only screen and (max-width: 480px) {
@@ -158,7 +179,7 @@ header .mobile-head {
 
 	.banner img {
 
-		padding-top: 4rem;
+		padding: 4rem 0 0 0;
 		width: 100%;
 	}
 
@@ -228,6 +249,18 @@ header .mobile-head {
 .info-text {
 	line-height: 1.5rem;
 	width: 65%;
+}
+
+.info-text a {
+	-o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+	transition: .5s;
+}
+
+.info-text a:hover {
+	color: rgb(146, 224, 224);
 }
 
 .info-text p {
@@ -317,6 +350,15 @@ header .mobile-head {
 .course-content img {
 	height: auto;
 	width: 100%;
+	-webkit-filter: grayscale(0) blur(0);
+	filter: grayscale(0) blur(0);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.course-content:hover img {
+	-webkit-filter: grayscale(100%) blur(3px);
+	filter: grayscale(100%) blur(3px);
 }
 
 .course-content h4 {
@@ -345,6 +387,13 @@ header .mobile-head {
 		padding: 0;
 		margin: 0.5rem 0;
 		width: 100%;
+		transition:all 0.3s ease;
+	}
+
+	.shrink:hover {
+		-webkit-transform: scale(0.9);
+		-ms-transform: scale(0.9);
+		transform: scale(0.9);
 	}
 
 	.course img {
@@ -355,7 +404,7 @@ header .mobile-head {
 		background-color: rgb(234, 235, 236);
 	}
 
-	.course-content h4{
+	.course-content h4 {
 		margin: 0;
 		padding: 1rem 1rem 0 1rem;
 	}
@@ -397,6 +446,15 @@ header .mobile-head {
 	height: auto;
 	width: 35%;
 	padding: 1rem;
+	-webkit-filter: grayscale(0) blur(0);
+	filter: grayscale(0) blur(0);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.showcase:hover img {
+	-webkit-filter: grayscale(100%) blur(3px);
+	filter: grayscale(100%) blur(3px);
 }
 
 @media only screen and (max-width: 480px) {
