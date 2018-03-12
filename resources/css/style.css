@@ -11,7 +11,6 @@ body {
   box-sizing: border-box;
 }
 
-h1,
 h2,
 h3,
 h4,
@@ -23,11 +22,6 @@ h5 {
 
 p {
 	line-height: 1.5;
-	font-weight: 300;
-}
-
-h1 {
-	font-size: 2.5rem;
 }
 
 h2 {
@@ -178,7 +172,6 @@ banner styles
 	background-color: rgb(216, 216, 216);
 }
 
-
 .banner img {
 	margin-top: 4rem;
 	width: 60%;
@@ -189,7 +182,6 @@ banner styles
 	margin-top: 4rem;
 	padding-top: 2rem;
 	width: 30%;
-
 }
 
 .banner-text h4 {
@@ -202,10 +194,28 @@ banner styles
 	text-align: center;
 	width: 100%;
 	padding: 0.5rem 0;
+	-o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+	transition: .5s;
+}
+
+.banner-text button:hover {
+	background-color: rgb(206, 206, 206);
 }
 
 button a {
 	color: rgb(255, 255, 255);
+	-o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+	transition: .5s;
+}
+
+button a:hover {
+	color: rgb(74, 74, 74);
 }
 
 @media only screen and (max-width: 480px) {
@@ -226,7 +236,7 @@ button a {
 		margin: 0;
 	}
 
-	.banner-text h1 {
+	.banner-text h2 {
 		font-size: 3rem;
 		margin: 2rem 0;
 	}
@@ -367,7 +377,7 @@ course styles
 	background-color: rgb(234, 235, 236);
 }
 
-.courses h1 {
+.courses h2 {
 	text-align: center;
 	padding-top: 2rem;
 }
@@ -424,10 +434,6 @@ course styles
 		border-top: 1px solid rgb(234, 235, 236); 
 	}
 
-	.courses h1 {
-		font-size: 2rem;
-	}
-
 	.course-container {
 		padding: 1rem;
 }
@@ -458,6 +464,8 @@ course styles
 	}
 
 	.course-content h4 {
+		display: flex;
+		align-items: center;
 		margin: 0;
 		padding: 1rem 1rem 0 1rem;
 	}
@@ -473,7 +481,7 @@ thesis styles
 
 */
 
-.thesis h1 {
+.thesis h2 {
 	text-align: center;
 	padding-top: 2rem;
 }
