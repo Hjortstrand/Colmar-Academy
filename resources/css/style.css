@@ -428,6 +428,7 @@ course styles
 
 @media only screen and (max-width: 480px) {
 	.courses {
+		width: 100%;
 		background-color: rgb(255, 255, 255);
 		border-top: 1px solid rgb(234, 235, 236); 
 	}
