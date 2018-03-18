@@ -4,6 +4,10 @@ general styles
 
 */
 
+@viewport {
+  width:device-width;
+}
+
 body {
   font-family: 'Libre Baskerville', serif;
   color: rgb(74, 74, 74);
