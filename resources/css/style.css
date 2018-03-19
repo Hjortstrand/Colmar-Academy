@@ -1,18 +1,12 @@
 /* 
-
 general styles
-
 */
-
-@viewport {
-  width:device-width;
-}
 
 body {
   font-family: 'Libre Baskerville', serif;
   color: rgb(74, 74, 74);
   background-color: rgb(243, 245, 245);
-  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 h2,
@@ -57,11 +51,10 @@ a {
 	width: 100%;
 	display: flex;
 	justify-content: center;
-	overflow: hidden;
 }
 
 .site-container {
-	width: 60rem;
+	max-width: 60rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -69,9 +62,7 @@ a {
 }
 
 /*
-
 header styles
-
 */
 
 header {
@@ -134,9 +125,9 @@ header .mobile-head {
 	display: none;
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 480px) {
 	header {
-		max-width: 100%;
+		width: 100%;
 	}
 
 	header .desktop-head {
@@ -147,7 +138,6 @@ header .mobile-head {
 		display: flex;
 		justify-content: space-around;
 		margin-top: 1rem;
-		width: 100%;
 	}
 
 	header .mobile-head img {
@@ -167,9 +157,7 @@ header .mobile-head {
 }
 
 /*
-
 banner styles
-
 */
 
 .banner {
@@ -222,22 +210,20 @@ button a:hover {
 	color: rgb(74, 74, 74);
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 480px) {
 
 	.banner {
-		height: auto;
-		max-width: 100%;
 		display: block;
 	}
 
 	.banner img {
-		height: auto;
+
+		padding: 4rem 0 0 0;
 		width: 100%;
-		padding: 0;
 	}
 
 	.banner-text {
-		max-width: 100%;
+		width: auto;
 		padding: 2rem 1rem;
 		margin: 0;
 	}
@@ -255,9 +241,7 @@ button a:hover {
 }
 
 /*
-
 information styles
-
 */
 
 .info {
@@ -333,7 +317,7 @@ information styles
 	height: 2rem;
 }
 */
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 480px) {
 	.main-info {
 		display: none;
 	}
@@ -374,9 +358,7 @@ information styles
 }
 
 /*
-
 course styles
-
 */
 
 .courses {
@@ -434,9 +416,8 @@ course styles
 	margin: 0.5rem 1rem 0 1rem;
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 480px) {
 	.courses {
-		width: 100%;
 		background-color: rgb(255, 255, 255);
 		border-top: 1px solid rgb(234, 235, 236); 
 	}
@@ -481,9 +462,7 @@ course styles
 }
 
 /*
-
 thesis styles
-
 */
 
 .thesis h2 {
@@ -536,7 +515,7 @@ thesis styles
 	padding-bottom: 0.5rem;
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 480px) {
 	.thesis {
 		border-top: 1px solid rgb(234, 235, 236);
 	}
@@ -560,9 +539,7 @@ thesis styles
 }
 
 /*
-
 footer styles
-
 */
 
 .foot {
@@ -592,7 +569,7 @@ footer .link {
 	margin-left: 1rem;
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 480px) {
 	.foot {
 		width: 28rem;
 		padding: 1rem 0 1rem 2rem;
