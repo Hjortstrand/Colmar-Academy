@@ -9,6 +9,10 @@ body {
   box-sizing: border-box;
 }
 
+*, *:before, *:after {
+  box-sizing: inherit;
+ }
+
 h2,
 h3,
 h4,
@@ -55,6 +59,7 @@ a {
 
 .site-container {
 	max-width: 60rem;
+	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -125,7 +130,11 @@ header .mobile-head {
 	display: none;
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 480px) {
+	.site-container {
+    	width: 95%;
+  }
+
 	header {
 		width: 100%;
 	}
@@ -210,7 +219,7 @@ button a:hover {
 	color: rgb(74, 74, 74);
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 480px) {
 
 	.banner {
 		display: block;
@@ -317,7 +326,7 @@ information styles
 	height: 2rem;
 }
 */
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 480px) {
 	.main-info {
 		display: none;
 	}
@@ -416,8 +425,9 @@ course styles
 	margin: 0.5rem 1rem 0 1rem;
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 480px) {
 	.courses {
+		width: 100%;
 		background-color: rgb(255, 255, 255);
 		border-top: 1px solid rgb(234, 235, 236); 
 	}
@@ -515,7 +525,7 @@ thesis styles
 	padding-bottom: 0.5rem;
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 480px) {
 	.thesis {
 		border-top: 1px solid rgb(234, 235, 236);
 	}
@@ -569,7 +579,7 @@ footer .link {
 	margin-left: 1rem;
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 480px) {
 	.foot {
 		width: 28rem;
 		padding: 1rem 0 1rem 2rem;
