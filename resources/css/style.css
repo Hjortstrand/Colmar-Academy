@@ -132,7 +132,7 @@ header .mobile-head {
 
 @media only screen and (max-width: 480px) {
 	.site-container {
-    	width: 95%;
+    	width: 100%;
   }
 
 	header {
